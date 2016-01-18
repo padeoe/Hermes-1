@@ -1,0 +1,6 @@
+1. how will wifip2p act when several devices try to connect each other?
+2  can a device maintain more than ont connection?how will it act if trying to
+connect other devices when connected to ond device?
+3. can two device connected to a host communicate  directly without transfering through the
+host?
+4. can one device join into multiple groups?

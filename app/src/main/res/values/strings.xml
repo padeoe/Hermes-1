@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TaskDistributionPlantform</string>
+    <string name="device_name">设备名</string>
+    <string name="device_mac">设备mac地址</string>
+    <string name="device_ip">设备ip地址</string>
+    <string name="task_name">任务名</string>
+    <string name="search">搜索</string>
+    <string name="distribute">发布任务</string>
+    <string name="contribute">接受任务</string>
+    <string name="task_list">任务列表</string>
+    <string name="refresh_taskList">刷新</string>
+    <string name="device_list">设备列表</string>
+    <string name="device_detail">设备细节</string>
+    <string name="empty_device_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
+    <string name="empty_task_message">No task found. Please get some task.</string>
+    <string name="task_detail">任务细节</string>
+    <string name="try_distribute_task">分发任务</string>
+    <string name="try_get_task">接受任务</string>
+    <string name="submit_exe">提交apk文件</string>
+    <string name="submit_argu">提交参数文件</string>
+    <string name="running_task">运行文件中……</string>
+    <string name="distributing_task">分发任务中……</string>
+    <string name="getting_task">接受任务中……</string>
+    <string name="submit_task">提交任务</string>
+    <string name="submit_task_name">提交任务名</string>
+    <string name="submit_class_name">提交运行的主要类名</string>
+    <string name="title_activity_get_task_acitivity">GetTaskAcitivity</string>
+    <string name="title_activity_distributing">DistributingActivity</string>
+    <string name="title_activity_contrributing">ContrributingActivity</string>
+    <string name="title_activity_copy_of_file_chooser">CopyOfFileChooserActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
