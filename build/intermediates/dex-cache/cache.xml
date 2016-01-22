@@ -2,32 +2,46 @@
 <items version="2" >
 
     <item
-        jar="F:\Archive\TaskDistributionPlantform\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jar="E:\OneDrive\Hermes\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="F:\Archive\TaskDistributionPlantform\app\build\intermediates\pre-dexed\debug\classes-9073b7d495952ca162f77a674082a1c07ec283a7.jar" />
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\OneDrive\Hermes\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-5ba1eb9524769f6e528be6254fb125dd573e5618.jar" />
     </item>
     <item
-        jar="F:\SDK\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jar="E:\OneDrive\Hermes\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="F:\Archive\TaskDistributionPlantform\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-489561e2ad0728ccf6b3ddbc59aaecb072285dba.jar" />
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="E:\OneDrive\Hermes\app\build\intermediates\pre-dexed\debug\classes-77206ef9b0b1596d96d34df1446450e9b3fad6e7.jar" />
     </item>
     <item
-        jar="F:\Archive\TaskDistributionPlantform\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jar="E:\OneDrive\Hermes\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="F:\Archive\TaskDistributionPlantform\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-108aff61b9bc9a350fb8714bba3cccf55921091a.jar" />
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\OneDrive\Hermes\app\build\intermediates\pre-dexed\debug\classes-ed708082877d469f396554971d13958efad75c31.jar" />
     </item>
     <item
-        jar="F:\Archive\TaskDistributionPlantform\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jar="E:\OneDrive\Hermes\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="F:\Archive\TaskDistributionPlantform\app\build\intermediates\pre-dexed\debug\classes-2452f4df9ca89a4ccb88f0e7425e622d003116ef.jar" />
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\OneDrive\Hermes\app\build\intermediates\pre-dexed\debug\classes-910ca435605ea6340c59c9c8f70e0af34cf485e4.jar" />
+    </item>
+    <item
+        jar="E:\OneDrive\Hermes\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="E:\OneDrive\Hermes\app\build\intermediates\pre-dexed\debug\classes-f7265dae67c477eaee05fee6e92a8f38dbd385d2.jar" />
+    </item>
+    <item
+        jar="D:\Program Files\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\OneDrive\Hermes\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-e581505c6dc09001eb05a4b3250df64a3409a494.jar" />
     </item>
 
 </items>
