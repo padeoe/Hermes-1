@@ -21,7 +21,6 @@ import com.ata.model.task.Task;
 import com.ata.model.task.TaskList;
 import com.ata.model.task.TaskPiece;
 import com.ata.provider.task.ExecuteModule;
-import com.ata.provider.task.ResultListener;
 import com.ata.provider.task.TaskInfo;
 import com.ata.provider.task.TaskPartition;
 import com.ata.provider.task.TaskSet;
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements TransferActionLis
         mControl =PlantFormControl.getTransportLogic(this, mManager);
         setDefaultFragment();
         init_bottomButton();
-        Toast.makeText(this,"请确保WiFi打开！",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"Please ensure WiFi open！",Toast.LENGTH_LONG).show();
         mControl.start();
 
     }
@@ -206,26 +205,26 @@ public class MainActivity extends AppCompatActivity implements TransferActionLis
 
     @Override
     public void start_distribution(Intent intent) {
-        String exePath=intent.getStringExtra(GetTaskAcitivity.EXEPATH);
-        String argPath=intent.getStringExtra(GetTaskAcitivity.ARGPATH);
-        String taskName=intent.getStringExtra(GetTaskAcitivity.TASKNAME);
-        String className =intent.getStringExtra(GetTaskAcitivity.CLASSNAME);
+        String exePath=intent.getStringExtra(GetTaskActivity.EXEPATH);
+        String argPath=intent.getStringExtra(GetTaskActivity.ARGPATH);
+        String taskName=intent.getStringExtra(GetTaskActivity.TASKNAME);
+        String className =intent.getStringExtra(GetTaskActivity.CLASSNAME);
 
-        int start =intent.getIntExtra(GetTaskAcitivity.START, 0);
-        int end =intent.getIntExtra(GetTaskAcitivity.END, 9);
+        int start =intent.getIntExtra(GetTaskActivity.START, 0);
+        int end =intent.getIntExtra(GetTaskActivity.END, 9);
         int totalLength=end-start+1;
 
         File exe=new File(exePath);
         if(!exe.exists()){
             //报错
-            Toast.makeText(this, "exe文件不存在", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "executable file not exists!", Toast.LENGTH_SHORT).show();
             return;
 
         }File arg=null;
         if(argPath!=null) {
             arg = new File(argPath);
             if (!arg.exists()) {
-                Toast.makeText(this, "arg文件不存在", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "argument file not exists!", Toast.LENGTH_SHORT).show();
                 return;
             }
         }

@@ -1,7 +1,6 @@
 package com.ata.view;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Environment;
 import android.os.Bundle;
@@ -13,13 +12,10 @@ import android.widget.EditText;
 
 import com.ata.R;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 这个活动在试图发布一个任务时被创建，返回一个包含了创建任务所需信息的bundle
  */
-public class GetTaskAcitivity extends Activity {
+public class GetTaskActivity extends Activity {
     public static  final String EXEPATH="exe";
     public static  final String ARGPATH="arg";
     public static final  String TASKNAME="name";
@@ -93,8 +89,8 @@ public class GetTaskAcitivity extends Activity {
                 intent.putExtra(CLASSNAME,className);
                 intent.putExtra(START,value_start);
                 intent.putExtra(END, value_end);
-                GetTaskAcitivity.this.setResult(MainActivity.RESULT_TASKINFO, intent);
-                GetTaskAcitivity.this.finish();
+                GetTaskActivity.this.setResult(MainActivity.RESULT_TASKINFO, intent);
+                GetTaskActivity.this.finish();
                 return;
             }
         });

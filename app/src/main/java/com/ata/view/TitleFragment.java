@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.ata.R;
@@ -45,8 +44,8 @@ public class TitleFragment extends Fragment
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(getActivity(),
-                        "开始搜索  ",
+                Toast. makeText(getActivity(),
+                        "starting search  ",
                         Toast.LENGTH_SHORT).show();
                 ((TransferActionListener)getActivity()).discover();
             }
@@ -56,9 +55,7 @@ public class TitleFragment extends Fragment
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(getActivity(),
-                        "接受任务  ",
-                        Toast.LENGTH_SHORT).show();
+
                 ((TransferActionListener)getActivity()).start_contribution();
             }
         });
@@ -67,10 +64,8 @@ public class TitleFragment extends Fragment
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(getActivity(),
-                        "分发任务  ",
-                        Toast.LENGTH_SHORT).show();
-                Intent intent =new Intent(getActivity(),GetTaskAcitivity.class);
+
+                Intent intent =new Intent(getActivity(),GetTaskActivity.class);
 
                 startActivityForResult(intent, MainActivity.REQUEST_TASKINFO);
             }
