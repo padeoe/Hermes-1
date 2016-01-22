@@ -29,7 +29,9 @@
 
         <activity
             android:name=".view.GetTaskActivity"
-            android:label="@string/title_activity_get_task_activity" >
+            android:label="@string/title_activity_get_task_activity"
+            android:windowSoftInputMode="stateUnchanged|adjustPan"
+            >
         </activity>
     </application>
 

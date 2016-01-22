@@ -1,9 +1,12 @@
 package com.ata.view;
 
-import android.app.Activity;
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Environment;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,7 +18,7 @@ import com.ata.R;
 /**
  * 这个活动在试图发布一个任务时被创建，返回一个包含了创建任务所需信息的bundle
  */
-public class GetTaskActivity extends Activity {
+public class GetTaskActivity extends AppCompatActivity {
     public static  final String EXEPATH="exe";
     public static  final String ARGPATH="arg";
     public static final  String TASKNAME="name";
@@ -31,11 +34,21 @@ public class GetTaskActivity extends Activity {
     private  String TaskName="MinCutTask";
     private String className ="com.ata.min_cutalg.Karger_MinCutAlg";
 
-    @Override
+    /**
+     * Sets the Action Bar for new Android versions.
+     */
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    private void actionBarSetup() {
+        ActionBar ab = getSupportActionBar();
+        ab.setTitle(getResources().getText(R.string.release));
+    }
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_task_acitivity);
+
+        actionBarSetup();
 
         String path=Environment.getExternalStorageDirectory().getAbsolutePath();
         String exepth=path+"/app-release.apk";
@@ -53,8 +66,8 @@ public class GetTaskActivity extends Activity {
         start.setText("0".toCharArray(),0,1);
         end=(EditText)findViewById(R.id.editText_end);
         end.setText("100".toCharArray(),0,1);
-    //    Button getExe=(Button)findViewById(R.id.button);
-      //  Button getArg=(Button)findViewById(R.id.button2);
+        //    Button getExe=(Button)findViewById(R.id.button);
+        //  Button getArg=(Button)findViewById(R.id.button2);
         Button submit=(Button)findViewById(R.id.button_submit_task);
     /*
         getExe.setOnClickListener(new View.OnClickListener() {
